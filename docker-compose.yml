@@ -1,0 +1,9 @@
+version: '3'
+services:
+  mywebsite.com:
+    build: .
+    image: oc-devops-p3-docker
+    ports:
+      - "80:80"
+    volumes:
+      - /home/vagrant/oc-devops-p3-docker/mywebsite.com:/usr/share/nginx/html:ro
